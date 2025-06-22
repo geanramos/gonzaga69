@@ -45,12 +45,6 @@ defaults:
     values:
       layout: "page"
 
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-paginate-v2
-  - jekyll-archives
-
 # Paginação APENAS para a página inicial
 pagination:
   enabled: true
