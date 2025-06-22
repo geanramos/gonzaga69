@@ -1,25 +1,14 @@
-{% comment %} Lógica para definir as variáveis que usaremos {% endcomment %}
-{%- assign page_title = page.title | default: site.title -%}
-{%- if page.title -%}
-  {%- assign page_title = page.title | append: " | " | append: site.author.name -%}
-{%- endif -%}
+<title>{{ page.title }}</title>
+<!-- Meta Tags para SEO no Google -->
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="author" content="{{ page.title }}">{% if page.tags %}
+  <meta name="keywords" content="{% for tag in page.tags %}{{ tag }}{% if forloop.last == false %}, {% endif %}{% endfor %}">{% else %}
+  <meta name="keywords" content="{{ page.title }}, esporte, jornais, revistas, biblioteca,compras, computador, corpo, saúde, moda, cinema, crianças, diversão, arte, economia, educação, internet, rádio, tv, tempo, últimas notícias, viagem, jornalismo, informação, notícia, cultura, entretenimento, lazer, opinião, análise, internet, televisão, fotografia, imagem, som, áudio, vídeo, fotos, tecnologia, empregos, humor, música">{% endif %}
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
-{%- assign page_description = page.description | default: site.description -%}
-{%- assign page_url = page.url | absolute_url -%}
-
-{% comment %} Define a imagem a ser usada. Prioridade: page.image > site.social_image {% endcomment %}
-{%- if page.image -%}
-  {%- assign page_image = page.image | absolute_url -%}
-{%- else -%}
-  {%- assign page_image = site.social_image | absolute_url -%}
-{%- endif -%}
-
-
-    <title>{{ page_title }}</title>
-    <link rel="canonical" href="{{ page_url }}">
-    <meta name="description" content="{{ page_description }}">
-    <meta name="author" content="{{ site.author.name }}">
-    <!-- Configurações Gerais -->
+<!-- Configurações Gerais -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="mobile-web-app-capable" content="yes">
@@ -32,45 +21,62 @@
     <meta name="msapplication-navbutton-color" content="#4a21cc">
     <meta name="msapplication-TileColor" content="#4a21cc">
     <meta name="navbutton-color" content="#4a21cc">
+    
     <!-- Meta Tags para Google -->
-    <meta itemprop="name" content="{{ page_title }}">
-    <meta itemprop="description" content="{{ page_description }}">
-    <meta itemprop="image" content="{{ page_image }}">
+    <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - {{ site.title }}">
+    <meta itemprop="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta itemprop="image" content="{% if page.img %}{{ page.img | absolute_url }}{% else %}{{ site.image | absolute_url }}{% endif %}">
+    
     <!-- Meta Tags para Facebook (Open Graph), LinkedIn, WhatsApp -->
-    <meta property="og:title" content="{{ page_title }}">
-    <meta property="og:description" content="{{ page_description }}">
-    <meta property="og:url" content="{{ page_url }}">
-    <meta property="og:site_name" content="{{ site.author.name }}">
-    <meta property="og:image" content="{{ page_image }}">
     <meta property="og:type" content="article">
-    <meta property="og:locale" content="{{ site.language | replace: '-', '_' | default: 'pt_BR' }}">
+    <meta property="og:title" content="{{ site.title }} - {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    {% if page.img %} <meta property="og:image" content="{{ page.img | absolute_url }}"> {% else %} <meta property="og:image" content="{{ site.image | absolute_url }}"> {% endif %}
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="pt_BR">
+    
     <!-- Meta Tags para Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ page_title }}">
-    <meta name="twitter:description" content="{{ page_description }}">
-    <meta name="twitter:image" content="{{ page_image }}">
-    <meta name="twitter:site" content="@{{ site.social.twitter.username }}">
-    <meta name="twitter:creator" content="@{{ site.social.twitter.username }}">
+    <meta name="twitter:site" content="@geanramos">
+    <meta name="twitter:creator" content="@geanramos">
+    <meta name="twitter:title" content="{{ site.title }} - {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    {% if page.img %} <meta name="twitter:image" content="{{ page.img | absolute_url }}"> {% else %} <meta name="twitter:image" content="{{ site.image | absolute_url }}"> {% endif %}
+    <meta name="twitter:image:alt" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:image:width" content="1200">
+    <meta name="twitter:image:height" content="630">
     
-    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
-    
-    <script type="application/ld+json">
-{%- assign page_author = site.data.authors[page.author] | default: site.author -%}
+    <!-- Favicon e RSS -->
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ site.url }}{{ site.baseurl }}/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="https://feeds.feedburner.com/geanramos">
+  <link rel="icon" sizes="16x16" href="{{ site.url }}{{ site.baseurl }}/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico">
+  <link href="{{ site.url }}{{ site.baseurl }}/favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico">
+
+  <link rel="apple-touch-icon-precomposed" sizes="512x512" href="{{ site.url }}{{ site.baseurl }}/favicon.png?v=02">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}{{ site.baseurl }}/favicon.png?v=02">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}{{ site.baseurl }}/favicon.png?v=02">
+  <link rel="apple-touch-icon-precomposed" href="{{ site.url }}{{ site.baseurl }}/favicon.png?v=02">
+  
+
+<script type="application/ld+json">
+{%- assign author_data = site.data.authors[page.author] | default: site.author -%}
 {
   "@context": "https://schema.org",
   {%- if page.layout == 'post' -%}
   "@type": "BlogPosting",
   "headline": {{ page.title | jsonify }},
-  "image": "{{ page.image | default: site.social_image | absolute_url }}",
-  "editor": "{{ page_author.name | default: site.author.name }}",
+  "image": "{{ page.img }}",
   "author": {
     "@type": "Person",
-    "name": "{{ page_author.name | default: site.author.name }}",
-    "url": "{{ page_author.url | default: site.author.url }}"
+    "name": "{{ author_data.name | default: site.author.name }}",
+    "url": "{{ author_data.url | default: site.author.url }}"
   },
   "datePublished": "{{ page.date | date_to_xmlschema }}",
-  "dateCreated": "{{ page.date | date_to_xmlschema }}",
   {%- if page.last_modified_at -%}
   "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
   {%- else -%}
@@ -79,7 +85,7 @@
   "description": {{ page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | jsonify }},
   "mainEntityOfPage": {
      "@type": "WebPage",
-     "@id": "{{ page.url | absolute_url }}"
+     "@id": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
   },
   "publisher": {
     "@type": "Organization",
@@ -102,4 +108,3 @@
   {%- endif %}
 }
 </script>
-

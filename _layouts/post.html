@@ -16,9 +16,22 @@ body_class: "page-post"
   </main>
 
   <footer class="mx-auto markdown sm:markdown-lg lg:markdown-xl dark:markdown-dark mt-10">
-    <!--<button class="flex items-center space-x-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 inline w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
-      <a href="{{ site.github_repo }}/edit/{{ site.repo_branch }}/_posts/{{ page.name }}" title="Propor uma correção para este artigo no GitHub" class="no-underline hover:underline">Editar</a>
-    </button>-->
+    {%- comment -%}
+  Seção de Tags com o novo estilo "ícone + texto + links".
+{%- endcomment -%}
+{%- if page.tags and page.tags.size > 0 -%}
+<div class="flex items-center space-x-1 mt-6 pt-6 border-t dark:border-gray-800">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 inline w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 6h.008v.008H6V6z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+
+  <span class="font-semibold">Tags:</span>
+
+  <span>
+    {%- for tag in page.tags -%}
+      <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}" class="no-underline hover:underline">{{ tag }}</a>{%- unless forloop.last -%},&nbsp;{% endunless -%}
+    {%- endfor -%}
+  </span>
+</div>
+{%- endif -%}
     
     {%- if page.categories.size > 0 -%}
     <aside>

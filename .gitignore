@@ -1,9 +1,13 @@
-# .gitignore
+# Arquivos gerados pelo Jekyll
+/_site
+/.jekyll-cache
+/.jekyll-metadata
 
-# Ignorar pastas de dependências e do site gerado
+# Arquivos de dependências do Bundler
 /vendor/
-/_site/
-.jekyll-cache/
 
-# Outros arquivos de sistema
+# Arquivos de sistema
 .DS_Store
+
+# Arquivos de log e outros
+*.log

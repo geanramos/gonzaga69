@@ -1,0 +1,34 @@
+---
+layout: page
+title: "Todas as Categorias"
+permalink: /categorias/
+---
+
+<div class="mx-auto markdown">
+  <!--<h1>Todas as Categorias</h1>
+  <p>Navegue por todos os posts do blog, organizados por categoria.</p>-->
+
+  {% comment %}
+    O 'site.categories' do Jekyll é um objeto que contém todas as suas categorias.
+    Vamos iterar (fazer um loop) por cada uma delas.
+  {% endcomment %}
+  {% for category in site.categories %}
+    {% comment %}
+      'category[0]' é o nome da categoria (ex: "Jekyll").
+      'category[1]' é a lista de posts que estão nessa categoria.
+    {% endcomment %}
+    {% assign category_name = category[0] %}
+    {% assign posts_in_category = category[1] %}
+
+    <h2 id="{{ category_name | slugify }}">{{ category_name }}</h2>
+
+    <ul>
+      {% for post in posts_in_category %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  {% endfor %}
+</div>

@@ -1,0 +1,34 @@
+---
+layout: page
+title: "Todas as Tags"
+permalink: /tags/
+---
+
+<div class="mx-auto markdown">
+  <!--<h1>Todas as Tags</h1>
+  <p>Navegue por todos os posts do blog, organizados por tag.</p>-->
+
+  {% comment %}
+    O 'site.tags' do Jekyll funciona exatamente como o 'site.categories'.
+    Vamos iterar (fazer um loop) por cada uma delas.
+  {% endcomment %}
+  {% for tag in site.tags %}
+    {% comment %}
+      'tag[0]' é o nome da tag (ex: "Jekyll").
+      'tag[1]' é a lista de posts com essa tag.
+    {% endcomment %}
+    {% assign tag_name = tag[0] %}
+    {% assign posts_in_tag = tag[1] %}
+
+    <h2 id="{{ tag_name | slugify }}">{{ tag_name }}</h2>
+
+    <ul>
+      {% for post in posts_in_tag %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  {% endfor %}
+</div>
