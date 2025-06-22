@@ -7,7 +7,7 @@
     <span class="flex-auto text-left"></span>
   {%- endif -%}
 
-  <span class="flex-auto text-center">Page {{ paginator.page }} sur {{ paginator.total_pages }}</span>
+  <span class="flex-auto text-center">Página {{ paginator.page }} de {{ paginator.total_pages }}</span>
 
   {%- if paginator.next_page -%}
     <a class="flex-auto text-right hover:underline dark:hover:text-blue-300" href="{{ paginator.next_page_path | relative_url }}">Proxima</a>
