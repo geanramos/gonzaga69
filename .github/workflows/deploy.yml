@@ -29,7 +29,7 @@ jobs:
 
       # Constrói o site Jekyll (COM A INDENTAÇÃO CORRIGIDA)
       - name: Build site with Jekyll
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --future
 
       # Carrega o site gerado (a pasta _site) como um artefato
       - name: Upload artifact
