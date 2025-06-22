@@ -2,8 +2,8 @@
 title: Gean Ramos
 tagline: Apenas mais um blog criado com Jekyll
 description: "O lugar onde as histórias ganham vida! Junte-se a nós para romances arrebatadores, reflexões profundas e muitos mais. 😊"
-url: "https://dev.gean.me"
-baseurl: "/gonzaga69"
+# url: "https://dev.gean.me"
+# baseurl: "/gonzaga69"
 language: "pt-BR"
 social_image: "/assets/images/twitter-card.png"
 

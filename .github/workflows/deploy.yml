@@ -5,20 +5,45 @@ name: Build and Deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - main # O workflow roda sempre que houver um push na branch 'main'
+      - main
+
+# Permissões necessárias para o workflow ler o repositório e publicar
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  jekyll-build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Usa uma action pré-configurada para Jekyll que suporta Bundler e custom plugins
-      - name: Build and Deploy
-        uses: helaili/jekyll-action@v2
+      # Usa a action oficial do Ruby para configurar o ambiente
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          # Informa o token para que a action possa fazer o deploy no seu repositório
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # A branch onde os arquivos estáticos serão publicados
-          target_branch: 'gh-pages'
+          ruby-version: '3.3' # Uma versão moderna do Ruby
+          bundler-cache: true # Roda 'bundle install' e armazena o cache
+
+      # Constrói o site Jekyll
+      - name: Build site with Jekyll
+        run: bundle exec jekyll build
+
+      # Carrega o site gerado (a pasta _site) como um artefato
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    # O deploy só acontece depois que o build for concluído com sucesso
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # Action oficial para fazer o deploy do artefato no GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
