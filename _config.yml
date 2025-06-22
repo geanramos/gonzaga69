@@ -2,10 +2,11 @@
 title: Gean Ramos
 tagline: Apenas mais um blog criado com Jekyll
 description: "O lugar onde as histórias ganham vida! Junte-se a nós para romances arrebatadores, reflexões profundas e muitos mais. 😊"
-# url: "https://dev.gean.me"
-# baseurl: "/gonzaga69"
+url: "https://dev.gean.me"
+baseurl: "/gonzaga69"
 language: "pt-BR"
 social_image: "/assets/images/twitter-card.png"
+image: /assets/images/posts/minha-imagem-especifica.jpg
 
 # Autor Padrão e Redes Sociais
 author:
@@ -14,7 +15,7 @@ author:
   email: contato@gean.me
 social:
   twitter:
-    username: Gean Ramos
+    username: GeanRamos
     url: https://twitter.com/geanramos
   github:
     username: Gean Ramos
@@ -47,7 +48,6 @@ defaults:
 # Plugins
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-paginate-v2
   - jekyll-archives
 
