@@ -2,7 +2,7 @@
 layout: post
 title: "Explorando a Tipografia na Web: Elementos e Exemplos"
 description: "Um post de demonstração sobre tipografia, mostrando como incorporar vídeos, áudio, citações, código, imagens e outros elementos em um blog Jekyll."
-date: 2025-06-22 14:05:00 -0300
+date: 2025-06-22 00:05:00 -0300
 author: geanramos
 categories:
   - jekyll
