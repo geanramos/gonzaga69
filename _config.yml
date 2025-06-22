@@ -1,36 +1,40 @@
-# Informações Principais
+# -----------------------------------------------------------------------------
+# Informações do Site e Autor
+# -----------------------------------------------------------------------------
 title: Gean Ramos
 tagline: Apenas mais um blog criado com Jekyll
 description: "O lugar onde as histórias ganham vida! Junte-se a nós para romances arrebatadores, reflexões profundas e muitos mais. 😊"
 url: "https://dev.gean.me"
 baseurl: "/gonzaga69"
 language: "pt-BR"
-social_image: "/assets/images/twitter-card.png"
-image: /img/capa.jpg
+image: "/img/capa.jpg"
 
-# Autor Padrão e Redes Sociais
 author:
   name: Gean Ramos
   url: https://gean.me
   email: contato@gean.me
+
+# -----------------------------------------------------------------------------
+# Links Externos e Redes Sociais
+# -----------------------------------------------------------------------------
 social:
   twitter:
     username: GeanRamos
     url: https://twitter.com/geanramos
+  github:
+    username: geanramos # Adicionei o username para consistência
+    url: https://github.com/geanramos/
   bluesky:
     username: Gean Ramos
     url: https://bsky.app/profile/did:plc:k3g67rs7si5va35yyhp7utk2
-podcast:
-  title: Gean Ramos
-  url: https://soundcloud.com/geanramos
+  podcast:
+    title: Gean Ramos
+    url: https://soundcloud.com/geanramos
 
-# Build
+# -----------------------------------------------------------------------------
+# Configuração de Build do Jekyll
+# -----------------------------------------------------------------------------
 permalink: /:title.html
-
-# Configuração do Markdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
 
 # Configuração Padrão para Posts e Páginas
 defaults:
@@ -45,7 +49,21 @@ defaults:
     values:
       layout: "page"
 
-# Paginação APENAS para a página inicial
+# Configuração do Markdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# -----------------------------------------------------------------------------
+# Configuração dos Plugins
+# -----------------------------------------------------------------------------
+# Plugins que o Jekyll deve carregar
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-archives
+
+# Paginação para a página inicial (jekyll-paginate-v2)
 pagination:
   enabled: true
   per_page: 10
@@ -53,14 +71,20 @@ pagination:
   collection: 'posts'
   sort_reverse: true
 
-# Geração de páginas de categoria com jekyll-archives
+# Geração de páginas de categoria (jekyll-archives)
 jekyll-archives:
   enabled:
     - categories
   layouts:
-    category: 'category_page' # O nome do nosso layout
+    category: 'category_page'
   permalinks:
     category: '/category/:name/'
 
+# -----------------------------------------------------------------------------
 # Variáveis Personalizadas do Tema
+# -----------------------------------------------------------------------------
+# Imagem padrão para redes sociais (usada nos includes de meta tags)
+social_image: "/img/capa.jpg"
+
+# Fontes do Google
 google_fonts: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Roboto&display=swap"
