@@ -1,0 +1,71 @@
+# Informações Principais
+title: Gean Ramos
+tagline: Apenas mais um blog criado com Jekyll
+description: "O lugar onde as histórias ganham vida! Junte-se a nós para romances arrebatadores, reflexões profundas e muitos mais. 😊"
+url: "https://dev.gean.me"
+baseurl: "/gonzaga69"
+language: "pt-BR"
+social_image: "/assets/images/twitter-card.png"
+
+# Autor Padrão e Redes Sociais
+author:
+  name: Gean Ramos
+  url: https://gean.me
+  email: contato@gean.me
+social:
+  twitter:
+    username: Gean Ramos
+    url: https://twitter.com/geanramos
+  github:
+    username: Gean Ramos
+    url: https://github.com/geanramos/
+podcast:
+  title: Gean Ramos
+  url: https://soundcloud.com/geanramos
+
+# Build
+permalink: /:title.html
+
+# Configuração do Markdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Configuração Padrão para Posts e Páginas
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+  - jekyll-archives
+
+# Paginação APENAS para a página inicial
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/page/:num/'
+  collection: 'posts'
+
+# Geração de páginas de categoria com jekyll-archives
+jekyll-archives:
+  enabled:
+    - categories
+  layouts:
+    category: 'category_page' # O nome do nosso layout
+  permalinks:
+    category: '/category/:name/'
+
+# Variáveis Personalizadas do Tema
+google_fonts: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Roboto&display=swap"

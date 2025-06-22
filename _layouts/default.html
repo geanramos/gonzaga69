@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ site.language | default: 'pt-BR' }}" class="scroll-pt-[32px]">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% seo %}
+
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+    
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="{{ site.google_fonts }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <noscript><link href="{{ site.google_fonts }}" rel="stylesheet"></noscript>
+    <link as=style href="{{ 'assets/css/a11y-light.fe70faac3c99b116c2a79fe847199e40.css' | relative_url }}" rel=preload>
+    <link as=style href="{{ 'assets/css/a11y-dark.8f5f7dba7712944f34d33e68954e241f.css' | relative_url }}" rel=preload>
+  
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/fira_code.min.css">
+</head>
+<body class="dark:bg-gray-900 {{ page.body_class | default: 'page' }}">
+    {% include header.html %}
+    <div class="container lg:w-2/3 md:py-8 mx-auto py-4 w-11/12 xl:w-1/2">
+        {{ content }}
+    </div>
+    {% include footer.html %}
+    {% include footer-script.html %}
+</body>
+</html>

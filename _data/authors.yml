@@ -1,0 +1,16 @@
+geanramos:
+  name: "Gean Ramos"
+  github: "geanramos"
+  url: "https://gean.me/"
+frank:
+  name: "Frank Taillandier"
+  github: "dirtyf"
+  url: "https://frank.taillandier.me"
+patrickF:
+  name: "Patrick Faramaz"
+  github: "ipatate"
+  url: "https://www.goodmotion.fr/"
+podcast:
+  name: "🎙️ Génération statique"
+  github: "" # Deixe em branco se não houver
+  url: "https://anchor.fm/jamstatic"

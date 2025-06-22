@@ -1,0 +1,7 @@
+{%- comment -%}
+  Uso: {% include note.html type="info" content="Seu texto aqui." %}
+  O "type" será usado como classe CSS: note-info, note-tip, note-intro, etc.
+{%- endcomment -%}
+<div class="note note-{{ include.type | default: 'info' }}">
+  <p>{{ include.content }}</p>
+</div>

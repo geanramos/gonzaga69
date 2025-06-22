@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<header>
+  <h1 class="mb-6 md:mb-8 text-4xl font-display font-extrabold text-center text-violet-dark dark:text-blue-500">
+    Artigos &laquo;&nbsp;<span class="capitalize text-rose-600">{{ page.title | replace: '-', ' ' }}</span>&nbsp;&raquo;
+  </h1>
+</header>
+
+<main id="content">
+  <ul>
+    {%- for post in page.posts -%}
+      {%- assign author_data = site.data.authors[post.author] -%}
+      <li>
+        {%- include post-header.html p=post author_data=author_data in_list=true -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</main>

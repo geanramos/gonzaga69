@@ -1,0 +1,32 @@
+---
+layout: default
+body_class: "homepage"
+---
+<header>
+  <details class="mb-2">
+    <summary class="mb-2 text-lg font-semibold text-center cursor-pointer list-none text-violet dark:text-blue-500">Todas as categorias</summary>
+    <nav class="mb-6 md:mb-8 text-center text-semibold">
+      {%- for category in site.categories -%}
+        {%- assign category_name = category | first -%}
+        {%- assign category_posts = category | last -%}
+        <a class="text-xl font-semibold capitalize text-violet-dark hover:text-rose-600 dark:text-blue-500 dark:hover:text-blue-300" href="{{ site.baseurl }}/category/{{ category_name | slugify }}/">{{ category_name }}</a>
+        <span class="text-gray-600">({{ category_posts | size }})</span>
+        {%- unless forloop.last -%}
+        <span class="dark:text-blue-500">&middot;</span>
+        {%- endunless -%}
+      {%- endfor -%}
+    </nav>
+  </details>
+</header>
+<main id="content">
+  <ul>
+  {%- for post in paginator.posts -%}
+    {%- assign author_data = site.data.authors[post.author] -%}
+    <li>
+      {%- include post-header.html p=post author_data=author_data in_list=true -%}
+    </li>
+  {%- endfor -%}
+  </ul>
+  
+  {%- include paginator.html -%}
+</main>

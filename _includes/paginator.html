@@ -1,0 +1,19 @@
+{%- if paginator.total_pages > 1 -%}
+<nav class="flex flex-row items-center text-base md:text-lg font-semibold text-violet dark:text-blue-500">
+  {%- if paginator.previous_page -%}
+    <span>&larr;&nbsp;</span>
+    <a class="flex-auto text-left hover:underline dark:hover:text-blue-300" href="{{ paginator.previous_page_path | relative_url }}">Anterior</a>
+  {%- else -%}
+    <span class="flex-auto text-left"></span>
+  {%- endif -%}
+
+  <span class="flex-auto text-center">Page {{ paginator.page }} sur {{ paginator.total_pages }}</span>
+
+  {%- if paginator.next_page -%}
+    <a class="flex-auto text-right hover:underline dark:hover:text-blue-300" href="{{ paginator.next_page_path | relative_url }}">Proxima</a>
+    <span>&nbsp;&rarr;</span>
+  {%- else -%}
+    <span class="flex-auto text-right"></span>
+  {%- endif -%}
+</nav>
+{%- endif -%}

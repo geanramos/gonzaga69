@@ -1,0 +1,26 @@
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/5.0.0/anchor.min.js"></script>
+  <script>
+   document.addEventListener('DOMContentLoaded', function(event) {
+    anchors.add('.markdown h2, .markdown h3, .markdown h4, .markdown h5')
+   })
+  </script>
+   <style> #snackbar { visibility: hidden; min-width: 250px; background-color: #333; color: #fff; text-align: center; border-radius: 4px; padding: 8px 16px; position: fixed; z-index: 1; left: 50%; transform: translate(-50%); bottom: 20px; font-size: 16px } #snackbar.show { visibility: visible; -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s; animation: fadein 0.5s, fadeout 0.5s 2.5s } @-webkit-keyframes fadein { from { opacity: 0 } to { opacity: 1 } } @keyframes fadein { from { opacity: 0 } to { opacity: 1 } } @-webkit-keyframes fadeout { from { opacity: 1 } to { opacity: 0 } } @keyframes fadeout { from { opacity: 1 } to { opacity: 0 } } </style>
+  <script>
+   function addSnackbar() {
+    const snackbar = document.createElement('div');
+    snackbar.setAttribute('id', 'snackbar');
+    document.body.appendChild(snackbar)
+   }
+
+   function showSnackbar(message) {
+    var snackbar = document.getElementById('snackbar');
+    snackbar.className = 'show';
+    snackbar.innerHTML = message;
+    setTimeout(() => {
+     snackbar.className = snackbar.className.replace('show', '')
+    }, 3000)
+   }
+   addEventListener('load', () => {
+    addSnackbar()
+   })
+  </script>
