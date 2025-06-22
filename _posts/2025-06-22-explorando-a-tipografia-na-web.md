@@ -7,7 +7,7 @@ author: geanramos
 categories:
   - jekyll
   - design
-image: /assets/images/posts/typography-example.jpg
+image: /img/patrick-shaun-OWNvIK6I500-unsplash.jpg
 ---
 
 A tipografia é um dos pilares do design na web. Ela não se refere apenas à escolha da fonte, mas também à forma como o texto é estruturado e apresentado, impactando diretamente a legibilidade e a experiência do usuário. Neste post, vamos explorar diversos elementos que enriquecem o conteúdo de um blog.
@@ -23,7 +23,7 @@ Seu navegador não suporta o elemento de áudio.
 Uma boa imagem pode valer mais que mil palavras. Ela pode definir o tom do artigo, ilustrar um ponto complexo ou simplesmente tornar a leitura mais agradável. É fundamental que as imagens sejam otimizadas para a web, garantindo um carregamento rápido.
 
 ![Letras de madeira de uma antiga impressora, representando a tipografia clássica.](https://images.unsplash.com/photo-1593486544625-13ef2368e43a?q=80&w=1441&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-*Crédito da imagem: Unsplash*
+*Foto de Patrick Shaun na Unsplash*
 
 Como você pode ver, adicionar uma imagem é simples, e podemos incluir uma legenda em itálico logo abaixo para dar o devido crédito ou fornecer contexto.
 
