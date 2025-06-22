@@ -24,12 +24,12 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3' # Uma versão moderna do Ruby
+          ruby-version: '3.3'
           bundler-cache: true # Roda 'bundle install' e armazena o cache
 
-      # Constrói o site Jekyll
+      # Constrói o site Jekyll (COM A INDENTAÇÃO CORRIGIDA)
       - name: Build site with Jekyll
-      run: JEKYLL_ENV=development bundle exec jekyll build
+        run: JEKYLL_ENV=development bundle exec jekyll build
 
       # Carrega o site gerado (a pasta _site) como um artefato
       - name: Upload artifact
