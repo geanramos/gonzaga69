@@ -1,0 +1,9 @@
+# .gitignore
+
+# Ignorar pastas de dependências e do site gerado
+/vendor/
+/_site/
+.jekyll-cache/
+
+# Outros arquivos de sistema
+.DS_Store
