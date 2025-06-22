@@ -2,7 +2,7 @@
 layout: post
 title: "Explorando a Tipografia na Web: Elementos e Exemplos"
 description: "Um post de demonstração sobre tipografia, mostrando como incorporar vídeos, áudio, citações, código, imagens e outros elementos em um blog Jekyll."
-date: 2025-06-22 00:05:00 -0300
+date: 2025-06-22 10:05:00 -0300
 author: geanramos
 categories:
   - jekyll
@@ -38,28 +38,28 @@ Usar citações é uma forma poderosa de destacar uma frase ou o pensamento de o
 
 Vídeos são uma excelente ferramenta para tutoriais ou para apresentar conteúdo de forma mais dinâmica. A maneira mais fácil de adicioná-los é usando um `iframe` de plataformas como YouTube ou Vimeo.
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; margin-bottom: 1.5em;">
-  <iframe src="https://www.youtube.com/embed/trXRltKkl1g" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gWd3YaBsxvs?si=dxZxRnmZ2_BQQ0hx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Adicionando Blocos de Código
 
 Para um blog técnico, exibir blocos de código de forma clara e legível é essencial. O Jekyll, com o realce de sintaxe do Rouge, torna isso muito fácil.
 
-```css
-/* _config.yml */
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fdfdfd;
-}
+    css
+    /* _config.yml */
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fdfdfd;
+    }
+    
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      color: #1a1a1a;
+    }
 
-h1, h2, h3 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-  color: #1a1a1a;
-}
+
 
 
 ---
