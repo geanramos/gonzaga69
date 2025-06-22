@@ -29,7 +29,7 @@ jobs:
 
       # Constrói o site Jekyll
       - name: Build site with Jekyll
-        run: bundle exec jekyll build
+      run: JEKYLL_ENV=development bundle exec jekyll build
 
       # Carrega o site gerado (a pasta _site) como um artefato
       - name: Upload artifact
