@@ -1,4 +1,129 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://0.0.0.0:4000/gonzaga69/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/gonzaga69/" rel="alternate" type="text/html" /><updated>2025-06-22T13:55:27-03:00</updated><id>http://0.0.0.0:4000/gonzaga69/feed.xml</id><title type="html">Gean Ramos</title><subtitle>O lugar onde as histórias ganham vida! Junte-se a nós para romances arrebatadores, reflexões profundas e muitos mais. 😊</subtitle><author><name>Gean Ramos</name><email>contato@gean.me</email></author><entry><title type="html">Poema do Namoro</title><link href="http://0.0.0.0:4000/gonzaga69/poema-do-namoro.html" rel="alternate" type="text/html" title="Poema do Namoro" /><published>2025-06-20T10:30:00-03:00</published><updated>2025-06-20T10:30:00-03:00</updated><id>http://0.0.0.0:4000/gonzaga69/poema-do-namoro</id><content type="html" xml:base="http://0.0.0.0:4000/gonzaga69/poema-do-namoro.html"><![CDATA[<p><img src="img/2f37c7d7-ecf3-4d9e-b409-dc54a4db714d_736x736.jpg" alt="" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://0.0.0.0:4000/gonzaga69/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/gonzaga69/" rel="alternate" type="text/html" /><updated>2025-06-22T15:26:42-03:00</updated><id>http://0.0.0.0:4000/gonzaga69/feed.xml</id><title type="html">Gean Ramos</title><subtitle>O lugar onde as histórias ganham vida! Junte-se a nós para romances arrebatadores, reflexões profundas e muitos mais. 😊</subtitle><author><name>Gean Ramos</name><email>contato@gean.me</email></author><entry><title type="html">Explorando a Tipografia na Web: Elementos e Exemplos</title><link href="http://0.0.0.0:4000/gonzaga69/explorando-a-tipografia-na-web.html" rel="alternate" type="text/html" title="Explorando a Tipografia na Web: Elementos e Exemplos" /><published>2025-06-22T10:05:00-03:00</published><updated>2025-06-22T10:05:00-03:00</updated><id>http://0.0.0.0:4000/gonzaga69/explorando-a-tipografia-na-web</id><content type="html" xml:base="http://0.0.0.0:4000/gonzaga69/explorando-a-tipografia-na-web.html"><![CDATA[<p>A tipografia é um dos pilares do design na web. Ela não se refere apenas à escolha da fonte, mas também à forma como o texto é estruturado e apresentado, impactando diretamente a legibilidade e a experiência do usuário. Neste post, vamos explorar diversos elementos que enriquecem o conteúdo de um blog.</p>
+
+<h2 id="incorporando-audio">Incorporando audio</h2>
+<audio controls="" style="width: 100%;">
+<source src="https://tishanews.u1m.com.br/audio/giro-de-noticias-250404-p1.mp3" type="audio/mpeg" />
+Seu navegador não suporta o elemento de áudio.
+</audio>
+
+<h2 id="a-importância-da-imagem-no-contexto">A Importância da Imagem no Contexto</h2>
+
+<p>Uma boa imagem pode valer mais que mil palavras. Ela pode definir o tom do artigo, ilustrar um ponto complexo ou simplesmente tornar a leitura mais agradável. É fundamental que as imagens sejam otimizadas para a web, garantindo um carregamento rápido.</p>
+
+<p><img src="https://images.unsplash.com/photo-1593486544625-13ef2368e43a?q=80&amp;w=1441&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Letras de madeira de uma antiga impressora, representando a tipografia clássica." />
+<em>Foto de Patrick Shaun na Unsplash</em></p>
+
+<p>Como você pode ver, adicionar uma imagem é simples, e podemos incluir uma legenda em itálico logo abaixo para dar o devido crédito ou fornecer contexto.</p>
+
+<h2 id="citações-para-dar-ênfase">Citações para Dar Ênfase</h2>
+
+<p>Usar citações é uma forma poderosa de destacar uma frase ou o pensamento de outra pessoa, quebrando o ritmo do texto e dando ênfase a uma ideia importante.</p>
+
+<blockquote>
+  <p>“Design não é apenas o que parece e o que se sente. Design é como funciona.”
+<cite>– Steve Jobs</cite></p>
+</blockquote>
+
+<h2 id="incorporando-vídeos">Incorporando Vídeos</h2>
+
+<p>Vídeos são uma excelente ferramenta para tutoriais ou para apresentar conteúdo de forma mais dinâmica. A maneira mais fácil de adicioná-los é usando um <code class="language-plaintext highlighter-rouge">iframe</code> de plataformas como YouTube ou Vimeo.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gWd3YaBsxvs?si=dxZxRnmZ2_BQQ0hx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+
+<h2 id="adicionando-blocos-de-código">Adicionando Blocos de Código</h2>
+
+<p>Para um blog técnico, exibir blocos de código de forma clara e legível é essencial. O Jekyll, com o realce de sintaxe do Rouge, torna isso muito fácil.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>css
+/* _config.yml */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fdfdfd;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="hierarquia-completa-de-títulos">Hierarquia Completa de Títulos</h2>
+
+<p>A estrutura de títulos (headings) é fundamental para a organização do conteúdo e para o SEO. O <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> é usado para o título principal do post, e os seguintes para as seções e subseções.</p>
+
+<hr />
+
+<h2 id="título-de-nível-2-h2">Título de Nível 2 (h2)</h2>
+<p>Este é um subtítulo principal, usado para as grandes seções do seu texto.</p>
+
+<h3 id="título-de-nível-3-h3">Título de Nível 3 (h3)</h3>
+<p>Usado para subdividir uma seção <code class="language-plaintext highlighter-rouge">h2</code>.</p>
+
+<h4 id="título-de-nível-4-h4">Título de Nível 4 (h4)</h4>
+<p>Para um nível de detalhe ainda maior dentro de um <code class="language-plaintext highlighter-rouge">h3</code>.</p>
+
+<h5 id="título-de-nível-5-h5">Título de Nível 5 (h5)</h5>
+<p>Raramente usado, mas disponível para uma hierarquia bem específica.</p>
+
+<h6 id="título-de-nível-6-h6">Título de Nível 6 (h6)</h6>
+<p>Ainda mais raro, geralmente usado para notas de rodapé ou legendas detalhadas.</p>
+
+<hr />
+
+<h2 id="tabelas-para-organizar-dados">Tabelas para Organizar Dados</h2>
+
+<p>Tabelas são perfeitas para apresentar dados de forma estruturada e comparativa.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Recurso</th>
+      <th style="text-align: center">Suporte Nativo</th>
+      <th style="text-align: right">Exemplo de Uso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Imagens</td>
+      <td style="text-align: center">Sim</td>
+      <td style="text-align: right">Tutoriais, Galerias</td>
+    </tr>
+    <tr>
+      <td>Blocos de Código</td>
+      <td style="text-align: center">Sim</td>
+      <td style="text-align: right">Artigos Técnicos</td>
+    </tr>
+    <tr>
+      <td>Vídeos (Iframe)</td>
+      <td style="text-align: center">Sim</td>
+      <td style="text-align: right">Demonstrações, Vlogs</td>
+    </tr>
+    <tr>
+      <td>Áudio Local</td>
+      <td style="text-align: center">Sim</td>
+      <td style="text-align: right">Podcasts, Músicas</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="outros-elementos-de-texto">Outros Elementos de Texto</h2>
+
+<p>Além de <strong>negrito</strong> e <em>itálico</em>, o Markdown do Jekyll suporta outros formatos úteis:</p>
+
+<ul>
+  <li>Texto riscado: <code class="language-plaintext highlighter-rouge">~~Isto foi um erro.~~</code> se torna <del>Isto foi um erro.</del></li>
+  <li>Texto marcado/destacado: <code class="language-plaintext highlighter-rouge">==Esta parte é importante==</code> se torna ==Esta parte é importante==.</li>
+  <li>Subscrito (Subscript) para fórmulas químicas: <code class="language-plaintext highlighter-rouge">H~2~O</code> se torna H~2~O.</li>
+  <li>Sobrescrito (Superscript) para exponenciais: <code class="language-plaintext highlighter-rouge">x^2^</code> se torna x^2^.</li>
+  <li>E também podemos indicar teclas de atalho com a tag <code class="language-plaintext highlighter-rouge">&lt;kbd&gt;</code>: Pressione <kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar.</li>
+</ul>]]></content><author><name>Gean Ramos</name></author><category term="jekyll" /><category term="design" /><summary type="html"><![CDATA[Um post de demonstração sobre tipografia, mostrando como incorporar vídeos, áudio, citações, código, imagens e outros elementos em um blog Jekyll.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/gonzaga69/img/patrick-shaun-OWNvIK6I500-unsplash.jpg" /><media:content medium="image" url="http://0.0.0.0:4000/gonzaga69/img/patrick-shaun-OWNvIK6I500-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Poema do Namoro</title><link href="http://0.0.0.0:4000/gonzaga69/poema-do-namoro.html" rel="alternate" type="text/html" title="Poema do Namoro" /><published>2025-06-20T10:30:00-03:00</published><updated>2025-06-20T10:30:00-03:00</updated><id>http://0.0.0.0:4000/gonzaga69/poema-do-namoro</id><content type="html" xml:base="http://0.0.0.0:4000/gonzaga69/poema-do-namoro.html"><![CDATA[<p><img src="img/2f37c7d7-ecf3-4d9e-b409-dc54a4db714d_736x736.jpg" alt="" /></p>
 
 <p>Imagem: Pinterest</p>
 
@@ -584,64 +709,4 @@ A cada doação, ficamos mais motivados para continuar entregando conteúdo rele
 
 <p>Quem diria que aquelas moedinhas digitais que ninguém dava importância se transformariam em uma verdadeira mina de ouro digital?</p>
 
-<p>Por isso, da próxima vez que alguém te disser que investir em algo novo é uma má ideia, lembre-se do poder das criptomoedas e dos giros inesperados do mercado.</p>]]></content><author><name>Gean Ramos</name><email>contato@gean.me</email></author><category term="wow" /><category term="wow" /><summary type="html"><![CDATA[Como um salário mínimo brasileiro em 2009 poderia render bilhões em 2025!]]></summary></entry><entry><title type="html">Metadados: O Superpoder Oculto do Seu Site</title><link href="http://0.0.0.0:4000/gonzaga69/Metadados-O-Superpoder-Oculto-do-Seu-Site.html" rel="alternate" type="text/html" title="Metadados: O Superpoder Oculto do Seu Site" /><published>2025-02-02T09:01:00-03:00</published><updated>2025-02-02T09:01:00-03:00</updated><id>http://0.0.0.0:4000/gonzaga69/Metadados-O-Superpoder-Oculto-do-Seu-Site</id><content type="html" xml:base="http://0.0.0.0:4000/gonzaga69/Metadados-O-Superpoder-Oculto-do-Seu-Site.html"><![CDATA[<h2 id="️-desvendando-o-mistério-dos-metadados-por-que-eles-importam">🖥️ Desvendando o Mistério dos Metadados: Por que Eles Importam</h2>
-
-<p>Quer descobrir um segredo que vai turbinar seu site e encantar os usuários? Os metadados são como os super-heróis invisíveis da web. Eles não usam capas, mas fazem um trabalho espetacular nos bastidores. Vamos explorar esses pequenos campeões e entender por que você deve ou não usá-los.</p>
-
-<h2 id="o-que-são-esses-metadados">O que são esses Metadados?</h2>
-
-<p>Metadados são como as instruções ocultas que dão aos navegadores e dispositivos as dicas necessárias para uma experiência de usuário incrível. Imagine que você está se preparando para uma festa e precisa de diferentes roupas para diferentes ocasiões. Os metadados são suas roupas digitais, prontos para qualquer dispositivo!</p>
-
-<h2 id="conheça-os-meta-heróis">Conheça os Meta Heróis</h2>
-
-<ol>
-  <li><strong>Apple Touch Icons</strong> 🧑‍🍎
-    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"57x57"</span> <span class="na">href=</span><span class="s">"public/icon/apple-icon-57x57.png"</span><span class="nt">&gt;</span>
- <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"60x60"</span> <span class="na">href=</span><span class="s">"public/icon/apple-icon-60x60.png"</span><span class="nt">&gt;</span>
- <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"72x72"</span> <span class="na">href=</span><span class="s">"public/icon/apple-icon-72x72.png"</span><span class="nt">&gt;</span>
- <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"76x76"</span> <span class="na">href=</span><span class="s">"public/icon/apple-icon-76x76.png"</span><span class="nt">&gt;</span>
- <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"114x114"</span> <span class="na">href=</span><span class="s">"public/icon/apple-icon-114x114.png"</span><span class="nt">&gt;</span>
- <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"120x120"</span> <span class="na">href=</span><span class="s">"public/icon/apple-icon-120x120.png"</span><span class="nt">&gt;</span>
- <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"144x144"</span> <span class="na">href=</span><span class="s">"public/icon/apple-icon-144x144.png"</span><span class="nt">&gt;</span>
- <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"152x152"</span> <span class="na">href=</span><span class="s">"public/icon/apple-icon-152x152.png"</span><span class="nt">&gt;</span>
- <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"apple-touch-icon"</span> <span class="na">sizes=</span><span class="s">"180x180"</span> <span class="na">href=</span><span class="s">"public/icon/apple-icon-180x180.png"</span><span class="nt">&gt;</span>
-</code></pre></div>    </div>
-    <p>Esses ícones são como os tapetes vermelhos do seu site para dispositivos iOS. Quando um usuário salva seu site na tela inicial do iPhone ou iPad, esses ícones garantem que ele se lembre de você com um toque de estilo.</p>
-  </li>
-  <li><strong>Ícones de Favicon</strong> 🌐
-    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">sizes=</span><span class="s">"192x192"</span> <span class="na">href=</span><span class="s">"public/icon/android-icon-192x192.png"</span><span class="nt">&gt;</span>
- <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">sizes=</span><span class="s">"32x32"</span> <span class="na">href=</span><span class="s">"public/icon/favicon-32x32.png"</span><span class="nt">&gt;</span>
- <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">sizes=</span><span class="s">"96x96"</span> <span class="na">href=</span><span class="s">"public/icon/favicon-96x96.png"</span><span class="nt">&gt;</span>
- <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"icon"</span> <span class="na">type=</span><span class="s">"image/png"</span> <span class="na">sizes=</span><span class="s">"16x16"</span> <span class="na">href=</span><span class="s">"public/icon/favicon-16x16.png"</span><span class="nt">&gt;</span>
-</code></pre></div>    </div>
-    <p>Esses pequenos campeões são os ícones que aparecem nas abas do navegador, ajudando os usuários a identificar seu site rapidamente. Eles também são usados quando um site é salvo na tela inicial do Android.</p>
-  </li>
-  <li><strong>Manifesto</strong> 📜
-    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"manifest"</span> <span class="na">href=</span><span class="s">"public/icon/manifest.json"</span><span class="nt">&gt;</span>
-</code></pre></div>    </div>
-    <p>Pense no manifesto como o passaporte do seu site. Ele fornece informações vitais como nome, ícones e como o aplicativo web deve se comportar, garantindo que seu site funcione como um app nativo quando adicionado à tela inicial.</p>
-  </li>
-  <li><strong>Meta Tags do Microsoft Tile</strong> 🪟
-    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"msapplication-TileColor"</span> <span class="na">content=</span><span class="s">"#ffffff"</span><span class="nt">&gt;</span>
- <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"msapplication-TileImage"</span> <span class="na">content=</span><span class="s">"public/icon/ms-icon-144x144.png"</span><span class="nt">&gt;</span>
-</code></pre></div>    </div>
-    <p>Quando seu site é fixado no menu Iniciar do Windows, essas meta tags garantem que ele pareça fantástico, com uma cor de fundo e um ícone personalizados.</p>
-  </li>
-  <li><strong>Meta Tag de Cor do Tema</strong> 🎨
-    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"theme-color"</span> <span class="na">content=</span><span class="s">"#ffffff"</span><span class="nt">&gt;</span>
-</code></pre></div>    </div>
-    <p>Esta tag define a cor da barra de endereço do navegador em dispositivos móveis, melhorando a integração visual do site com o navegador e reforçando a identidade da sua marca.</p>
-  </li>
-</ol>
-
-<h2 id="por-que-usar-todos">Por que Usar Todos?</h2>
-
-<h3 id="sim">Sim:</h3>
-<p>Se você deseja proporcionar a melhor experiência possível para seus usuários, utilizando diferentes dispositivos e sistemas operacionais, estas meta tags são essenciais. Elas são como adicionar cerejas ao topo do bolo da experiência do usuário.</p>
-
-<h3 id="não">Não:</h3>
-<p>Se seu site é simples ou se os requisitos dos seus usuários não justificam esse nível de personalização, você pode optar por não usá-las. Mas, honestamente, quem não gostaria de um site que se adapta perfeitamente a qualquer dispositivo?</p>
-
-<h2 id="vamos-colocar-em-prática">Vamos Colocar em Prática!</h2>
-
-<p>Agora que você conhece o poder dos metadados, que tal implementá-los no seu site? Você vai ver a diferença na experiência do usuário e na aparência geral. Além disso, seus usuários vão adorar a atenção aos detalhes!</p>]]></content><author><name>Gean Ramos</name><email>contato@gean.me</email></author><category term="code" /><category term="web developer" /><summary type="html"><![CDATA[Descubra como os metadados podem turbinar seu site e encantar usuários.]]></summary></entry></feed>
+<p>Por isso, da próxima vez que alguém te disser que investir em algo novo é uma má ideia, lembre-se do poder das criptomoedas e dos giros inesperados do mercado.</p>]]></content><author><name>Gean Ramos</name><email>contato@gean.me</email></author><category term="wow" /><category term="wow" /><summary type="html"><![CDATA[Como um salário mínimo brasileiro em 2009 poderia render bilhões em 2025!]]></summary></entry></feed>
