@@ -1,13 +1,25 @@
-# Arquivos gerados pelo Jekyll
-/_site
-/.jekyll-cache
-/.jekyll-metadata
+# -----------------------------------------------------------------------------
+# Arquivos e pastas gerados pelo Jekyll e pelo Bundler.
+# Estes arquivos NUNCA devem ser enviados para o GitHub.
+# -----------------------------------------------------------------------------
 
-# Arquivos de dependências do Bundler
+# Pasta do site gerado pelo Jekyll
+/_site
+
+# Pasta de dependências do Bundler
 /vendor/
 
-# Arquivos de sistema
+# Arquivos de cache e configuração do Jekyll e Bundler
+/.jekyll-cache/
+/.jekyll-metadata
+/.bundle/
+
+# -----------------------------------------------------------------------------
+# Arquivos de sistema operacional (opcional, mas boa prática)
+# -----------------------------------------------------------------------------
 .DS_Store
 
-# Arquivos de log e outros
+# -----------------------------------------------------------------------------
+# Arquivos de log (opcional, mas boa prática)
+# -----------------------------------------------------------------------------
 *.log
